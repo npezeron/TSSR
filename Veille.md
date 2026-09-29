@@ -1,0 +1,1 @@
+# Ressource pour veille informatique
