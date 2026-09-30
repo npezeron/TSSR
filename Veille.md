@@ -82,8 +82,7 @@ Que ce soit via des sites internet, des podcasts/vidéos YouTube ou encore des m
 ---
 
 ## Journal de veille
-
-> Ajouter les entrées les plus récentes en haut.
+Ajouts de plusieur liens/ressources.
 
 ---
 
