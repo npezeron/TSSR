@@ -5,7 +5,7 @@ Que ce soit via des sites internet, des podcasts/vidéos YouTube ou encore des m
 
 
 
-# Ressource pour veille informatique
+# Ressource pour la veille informatique
 ---
 ### Liste de site 
 * https://www.privacytools.io/
@@ -15,7 +15,7 @@ Que ce soit via des sites internet, des podcasts/vidéos YouTube ou encore des m
 * https://www.it-connect.fr/
 
 
-# Les chaine Youtube
+# Les chaines Youtube
 
 ### Type Veille
 * Underscore
