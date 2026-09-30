@@ -1,0 +1,48 @@
+# Cheat Sheet Markdown
+
+Aide-mémoire de la syntaxe Markdown (CommonMark + extensions GitHub courantes).
+
+---
+
+## 1. Titres
+
+```markdown
+# Titre niveau 1
+## Titre niveau 2
+### Titre niveau 3
+#### Titre niveau 4
+##### Titre niveau 5
+###### Titre niveau 6
+```
+
+Alternative pour les niveaux 1 et 2 :
+
+```markdown
+Titre niveau 1
+==============
+
+Titre niveau 2
+--------------
+```
+
+---
+
+## 2. Mise en forme du texte
+
+| Syntaxe | Résultat |
+|---|---|
+| `**gras**` ou `__gras__` | **gras** |
+| `*italique*` ou `_italique_` | *italique* |
+| `***gras et italique***` | ***gras et italique*** |
+| `~~barré~~` | ~~barré~~ |
+| `` `code en ligne` `` | `code en ligne` |
+| `==surligné==` (selon l'éditeur) | ==surligné== |
+| `H~2~O` / `X^2^` (selon l'éditeur) | indice / exposant |
+
+Pour échapper un caractère spécial, utiliser `\` : `\*pas italique\*`
+
+---
+
+## 3. Paragraphes et retours à la ligne
+
+- Un **paragraphe** est séparé du suivant par
