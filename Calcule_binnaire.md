@@ -21,7 +21,7 @@ Calcul : 8 + 4 + 2 + 1 = **15**
 
 Le principe est le suivant on regarde dans la matrice le plus grand nombre possiblen sans dépacer la valeur du nombre à convertire dans le cas présent 128 est le plus grand nombre disponnible dans la matrice. On le soustrer 245-128 = 117 et recommence le processuce jusqu'a atteindre 0
 
-| Position (bit) | Position (bit) | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
+| Position (bit) | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 |:---------------|--:|--:|--:|--:|--:|--:|--:|--:|
 | Valeur         | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 | Bit            | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 |
