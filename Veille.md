@@ -59,7 +59,7 @@ Que ce soit via des sites internet, des podcasts/vidéos YouTube ou encore des m
 | Korben | Actualité tech | https://korben.info |
 | Reddit r/sysadmin | Communauté d'administrateurs | https://www.reddit.com/r/sysadmin |
 
-> Vérifiez que chaque lien fonctionne toujours avant de l'ajouter à votre routine.
+
 
 ### Chaînes YouTube
 
@@ -86,7 +86,8 @@ Ajouts de plusieur liens/ressources.
 
 ---
 
-## Outils annexes
+## Flux RSS
+* https://www.inoreader.com/all_articles
 
 ### Application pour se perfectionner en anglais
 
