@@ -1,3 +1,10 @@
+# Introduction à la veille informatique
+La Veille est un moyen simple et efficace de se tenir au courant des actualités tech via différentes ressources disponibles
+Que ce soit via des sites internet, des podcasts/vidéos YouTube ou encore des magazines papiers.  
+
+
+
+
 # Ressource pour veille informatique
 ---
 ### Liste de site 
@@ -25,6 +32,6 @@
 * Deeple 
 * WordReference
 
-# Application pour ma Dyslexie
+# Application Dyslexie
 
  * https://www.antidote.info/fr/
