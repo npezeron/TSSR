@@ -1,5 +1,7 @@
 # Algèbre binaire
 
+Les portes logiques permettent à un ordinateur de traiter l'information : chacune applique une règle simple (ET, OU, NON...) sur des valeurs binaires, et c'est leur combinaison qui permet de réaliser des calculs complexes.  
+
 ## Porte logique
 
 Il existe plusieur type de porte logique qui permette le traitement éléctronique de l'information.  
