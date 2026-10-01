@@ -54,7 +54,7 @@ NOR L'information est FAUX en sortie si et seulement si A OU B sont VRAI
 
 NAND L'information est FAUX en sortie si et seulement si A ET B sont VRAI
 
-**XOR**
+**NOR**
 
 | A | B | S |
 |:-:|:-:|:-:|
