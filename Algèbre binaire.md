@@ -1,16 +1,14 @@
 # Algèbre binaire
 
-Les portes logiques permettent à un ordinateur de traiter l'information : chacune applique une règle simple (ET, OU, NON...) sur des valeurs binaires, et c'est leur combinaison qui permet de réaliser des calculs complexes.  
+Les portes logiques permettent à un ordinateur de traiter l'information : chacune applique une règle simple (ET, OU, NON...) sur des valeurs binaires, et c'est leur combinaison qui permet de réaliser des calculs complexes.
 
-## Porte logique
+## Portes logiques
 
-Il existe plusieur type de porte logique qui permette le traitement éléctronique de l'information.  
-  
-Voici les 6 porte logique.
+Il existe plusieurs types de portes logiques qui permettent le traitement électronique de l'information.
 
-### Exemble
+Voici les 6 portes logiques.
 
-**AND**
+### AND
 
 | A | B | S |
 |:-:|:-:|:-:|
@@ -19,9 +17,9 @@ Voici les 6 porte logique.
 | 1 | 0 | 0 |
 | 1 | 1 | 1 |
 
-AND L'information est VRAI en sortie si et seulement si A ET B sont VRAI
+La sortie est VRAIE si et seulement si A et B sont VRAIS.
 
-**OR**
+### OR
 
 | A | B | S |
 |:-:|:-:|:-:|
@@ -30,9 +28,9 @@ AND L'information est VRAI en sortie si et seulement si A ET B sont VRAI
 | 1 | 0 | 1 |
 | 1 | 1 | 1 |
 
-OR L'information est VRAI en sortie si A OU B sont VRAI ou les 2
+La sortie est VRAIE si et seulement si A ou B est VRAI.
 
-**XOR**
+### XOR
 
 | A | B | S |
 |:-:|:-:|:-:|
@@ -41,9 +39,9 @@ OR L'information est VRAI en sortie si A OU B sont VRAI ou les 2
 | 1 | 0 | 1 |
 | 1 | 1 | 0 |
 
-NOR L'information est FAUX en sortie si et seulement si A OU B sont VRAI
+La sortie est VRAIE si et seulement si A ou B est VRAI, mais pas les deux en même temps.
 
-**NAND**
+### NAND
 
 | A | B | S |
 |:-:|:-:|:-:|
@@ -52,9 +50,9 @@ NOR L'information est FAUX en sortie si et seulement si A OU B sont VRAI
 | 1 | 0 | 1 |
 | 1 | 1 | 0 |
 
-NAND L'information est FAUX en sortie si et seulement si A ET B sont VRAI
+La sortie est FAUSSE si et seulement si A et B sont VRAIS.
 
-**NOR**
+### NOR
 
 | A | B | S |
 |:-:|:-:|:-:|
@@ -63,9 +61,9 @@ NAND L'information est FAUX en sortie si et seulement si A ET B sont VRAI
 | 1 | 0 | 0 |
 | 1 | 1 | 0 |
 
-XOR L'information est VRAI en sortie si et seulement si A OU B sont VRAI mais pas les 2 en même temps
+La sortie est VRAIE si et seulement si A et B sont FAUX.
 
-**XNOR**
+### XNOR
 
 | A | B | S |
 |:-:|:-:|:-:|
@@ -74,4 +72,6 @@ XOR L'information est VRAI en sortie si et seulement si A OU B sont VRAI mais pa
 | 1 | 0 | 0 |
 | 1 | 1 | 1 |
 
-XNOR L'information est FAUX en sortie si et seulement si A OU B sont VRAI mais pas les 2 en même temps
+La sortie est VRAIE si et seulement si A et B ont la même valeur.
+
+Voici toutes les portes logiques ainsi que leurs résultats.
