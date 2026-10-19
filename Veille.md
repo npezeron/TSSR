@@ -65,6 +65,7 @@ Que ce soit via des sites internet, des podcasts/vidéos YouTube ou encore des m
 
 | Nom | Type |
 |-----|------|
+| IA et Stratégie | Veille IA |
 | Underscore | Veille |
 | Xavki | Veille |
 | Stéphane Rober | Veille |
