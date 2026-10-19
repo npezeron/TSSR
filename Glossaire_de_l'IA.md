@@ -133,3 +133,17 @@ Un glossaire est un recueil d'explications de mots rares ou spécialisés.
 - Mistral
 - NVIDIA
 - OpenAI
+
+### Webographie
+
+IA & Stratégie : Adieu les Apps : La nouvelle stratégie IA d'Apple qui vous concerne directement.
+
+[Vidéo YouTube](https://www.youtube.com/watch?v=Pdfanhj0qsk)
+
+[Article Korben](https://korben.info/llama-windows-llm-local.html)
+
+[Room TryHackMe](https://tryhackme.com/room/aimlsecuritythreats)
+
+[Glossaire IA de la CNIL](https://www.cnil.fr/fr/intelligence-artificielle/glossaire-ia)
+
+[Document Calaméo](https://www.calameo.com/cci-touraine/read/00169748932cbc5e72e6c?page=1)
