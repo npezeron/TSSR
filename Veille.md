@@ -28,13 +28,13 @@ Que ce soit via des sites internet, des podcasts/vidéos YouTube ou encore des m
 
 ### Thèmes suivis
 
-- [ ] Cybersécurité (vulnérabilités, ransomwares, bonnes pratiques)
-- [ ] Windows Server / Active Directory
-- [ ] Linux (Debian, Ubuntu, Red Hat)
-- [ ] Réseaux (Cisco, VLAN, pare-feu, VPN)
-- [ ] Virtualisation et cloud (Proxmox, VMware, Hyper-V)
-- [ ] Sauvegarde et supervision
-- [ ] Vie privée et libertés numériques
+* [ ] Cybersécurité (vulnérabilités, ransomwares, bonnes pratiques)
+* [ ] Windows Server / Active Directory
+* [ ] Linux (Debian, Ubuntu, Red Hat)
+* [ ] Réseaux (Cisco, VLAN, pare-feu, VPN)
+* [ ] Virtualisation et cloud (Proxmox, VMware, Hyper-V)
+* [ ] Sauvegarde et supervision
+* [ ] Vie privée et libertés numériques
 
 ---
 
@@ -43,21 +43,21 @@ Que ce soit via des sites internet, des podcasts/vidéos YouTube ou encore des m
 ### Sites et blogs
 
 | Nom | Thème | Lien |
-|-----|-------|------|
-| CERT-FR | Cybersécurité (alertes officielles) | https://www.cert.ssi.gouv.fr |
-| ANSSI / Cyber.gouv.fr | Cybersécurité (guides, rapports) | https://cyber.gouv.fr |
-| Cybermalveillance.gouv.fr | Cybersécurité (sensibilisation) | https://www.cybermalveillance.gouv.fr |
-| ZATAZ | Cybersécurité (actualité FR) | https://www.zataz.com |
-| The Hacker News | Cybersécurité (actualité EN) | https://thehackernews.com |
-| BleepingComputer | Cybersécurité (actualité EN) | https://www.bleepingcomputer.com |
-| PrivacyTools | Vie privée | https://www.privacytools.io/ |
-| La Quadrature du Net | Libertés numériques | https://www.laquadrature.net/ |
-| Bortzmeyer | Réseaux, Internet | https://www.bortzmeyer.org/ |
-| IT-Connect | Systèmes et réseaux (tutoriels) | https://www.it-connect.fr/ |
-| Next | Actualité numérique | https://www.next.ink |
-| LeMagIT | Actualité IT | https://www.lemagit.fr |
-| Korben | Actualité tech | https://korben.info |
-| Reddit r/sysadmin | Communauté d'administrateurs | https://www.reddit.com/r/sysadmin |
+| ----- | ------- | ------ |
+| CERT-FR | Cybersécurité (alertes officielles) | [https://www.cert.ssi.gouv.fr](https://www.cert.ssi.gouv.fr) |
+| ANSSI / Cyber.gouv.fr | Cybersécurité (guides, rapports) | [https://cyber.gouv.fr](https://cyber.gouv.fr) |
+| Cybermalveillance.gouv.fr | Cybersécurité (sensibilisation) | [https://www.cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr) |
+| ZATAZ | Cybersécurité (actualité FR) | [https://www.zataz.com](https://www.zataz.com) |
+| The Hacker News | Cybersécurité (actualité EN) | [https://thehackernews.com](https://thehackernews.com) |
+| BleepingComputer | Cybersécurité (actualité EN) | [https://www.bleepingcomputer.com](https://www.bleepingcomputer.com) |
+| PrivacyTools | Vie privée | [https://www.privacytools.io/](https://www.privacytools.io/) |
+| La Quadrature du Net | Libertés numériques | [https://www.laquadrature.net/](https://www.laquadrature.net/) |
+| Bortzmeyer | Réseaux, Internet | [https://www.bortzmeyer.org/](https://www.bortzmeyer.org/) |
+| IT-Connect | Systèmes et réseaux (tutoriels) | [https://www.it-connect.fr/](https://www.it-connect.fr/) |
+| Next | Actualité numérique | [https://www.next.ink](https://www.next.ink) |
+| LeMagIT | Actualité IT | [https://www.lemagit.fr](https://www.lemagit.fr) |
+| Korben | Actualité tech | [https://korben.info](https://korben.info) |
+| Reddit r/sysadmin | Communauté d'administrateurs | [https://www.reddit.com/r/sysadmin](https://www.reddit.com/r/sysadmin) |
 
 
 
