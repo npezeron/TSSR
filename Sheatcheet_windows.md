@@ -139,12 +139,6 @@
 | AltGr + E | Symbole € |
 | Alt + 0156 (pavé numérique) | Caractère œ |
 
-## À retenir
-
-Les cinq raccourcis qui font gagner le plus de temps au quotidien : **Win + V** (historique du presse-papiers), **Win + Maj + S** (capture), **Alt + Tab** (changer d’application), **Win + flèches** (organiser les fenêtres) et **Ctrl + Maj + T** (rouvrir un onglet fermé).
-
-## Win+r
-
 ## Win+r
 
 ### .cpl (panneau de configuration)
