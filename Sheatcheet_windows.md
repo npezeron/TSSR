@@ -182,7 +182,7 @@
 | tpm.msc | Gestion du module TPM (puce de sécurité) |
 | wmimgmt.msc | Contrôle WMI (infrastructure de gestion Windows) |
 
-### Autres
+### Autres commande dans win+R
 
 | Commande | Fonction |
 |:---|:---|
@@ -209,4 +209,11 @@
 | mdsched | Diagnostic de la mémoire Windows (test de la RAM au redémarrage) |
 | shell:startup | Dossier de démarrage de l'utilisateur (programmes lancés à l'ouverture de session) |
 | %appdata% | Dossier des données d'application (Roaming) de l'utilisateur |
-| snippingtool | Outil Capture d'écran |
+
+ ### Hors Win+r (autres méthodes de lancement)
+
+| Commande | Fonction | Comment le lancer |
+|:---|:---|:---|
+| Assistance rapide | Prise en main à distance par code de sécurité | Win + Ctrl + Q, ou recherche « Assistance rapide » dans le menu Démarrer |
+
+Quick Assist permet de faire du dépannage à distance comme la commande mstsc sauf qu'il n'y a pas besoin de connaître l'adresse IP, il suffit de donner le code à la personne qui demande de l'assistance.
