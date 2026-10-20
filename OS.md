@@ -1,55 +1,55 @@
 # OS
 
-# Un peut d'histoire
+## Un peu d’histoire
 
-**1970:** Création du modèle UNIX  
-**1980:** BSD "fils" d'UNIX qui donne naissance à plusieur modèle
+**1970:** Création du système UNIX  
+**1978:** Premier BSD, « fils » d’UNIX, qui donne naissance à plusieurs systèmes
 
-1. FreeBSD
-2. OpenBSD
-3. NetBSD
+1. FreeBSD (1993)
+2. NetBSD (1993)
+3. OpenBSD (1995)
 
-Grâce à FreeBSD et openBND la naissance de MAC-OS qui découlera par la suite IOS  
-**1980-1999:** Naissance de MSDOS -> Fait important le principale défault de MSDOS c'est qu'il est MonoUser et MonoTache  
-**1985:** Naissance de Windows 
-[Voir la timeline des versions de Windows](https://claude.ai/artifact/DPUE8vq3YigDmFHQAya7hy)   
-**1990:** Naissance de XENIX  
+**1980:** Naissance de XENIX  
+**1981-2000:** Naissance de MS-DOS -> Fait important : le principal défaut de MS-DOS est qu’il est mono-utilisateur et mono-tâche  
+**1985:** Naissance de Windows ([timeline](https://claude.ai/artifact/DPUE8vq3YigDmFHQAya7hy))  
 **1991:** Naissance de GNU/Linux  
-**2007:** Naissance de Android
+**2001:** Naissance de Mac OS X, issu de NeXTSTEP et de FreeBSD, dont découlera ensuite iOS (2007)  
+**2008:** Naissance d’Android (annoncé en 2007)
 
-## De quoi a besion un ordinateur
+## De quoi a besoin un ordinateur
 
-Un ordinateur à besion d'au moins 3 couche pour fonctionner
+Un ordinateur a besoin d’au moins 3 couches pour fonctionner.
 
 ### 1. Hardware
 
-Un PC à besion d'au minimum 3 composant hardware pour fonctionner
+Un PC a besoin d’au minimum 4 composants hardware pour fonctionner :
 
 1. CPU
 2. RAM
 3. Carte mère
+4. Alimentation
 
-C'est trois composant appartienne à la couche hardware.
+Ces quatre composants appartiennent à la couche hardware.
 
-### 2. Firmeware
+### 2. Firmware
 
-Ensuite il y la deuxième couche le **Firmeware** qui est composé en 2 partie
+Ensuite il y a la deuxième couche, le **firmware** (BIOS ou UEFI), qui est composé de 2 parties :
 
-1. POST: Power on self test
-2. BIOS
+1. POST : Power-On Self-Test
+2. BIOS / UEFI
 
-Les 2 couches permettent de créé un OS
+Le BIOS (ou l’UEFI) exécute le POST, puis lance l’OS.
 
 ### 3. OS
 
-Plusieur OS sont apparue au fil des années de BSD à Windows et MACOS mais tous découle de UNIX
+Plusieurs OS sont apparus au fil des années, de BSD à Windows et macOS. Beaucoup sont inspirés d’UNIX, mais pas Windows.
 
-# Les Puces
+## Les puces
 
-| Date  | Nom de la puce | Fréquence | Architecture | N°de Coeur | Bits | Puissance |
-|-------|:--------------:|:---------:| :-----------:|:----|:---:|:-----|
-|1986|intel 286-12|12 Mhz|CISC|1 coeur|16 bits| 24 Mo/s|
-|2000|intel P4|1.3 Ghz|CISC|1 coeur|32 bits| 5.2 Go/s|
-|2011|Core duo Extreme|3.2 Ghz|CISC|Dual core + HT|64 bits| 112 Go/s|
-|2021|Core I7|3.8 Ghz|CISC|8 coeur Pas HT|64 bits|243 Go/s|
-|TOP 2026|intel Serveur Quadriproc|3.2 Ghz|CISC|288 coeur pas HT|64 bits|28 To/s|
+| Date | Nom de la puce | Fréquence | Architecture | Nb de cœurs | Bits | Débit |
+|------|:--------------:|:---------:|:------------:|:------------|:----:|:------|
+| 1986 | Intel 286-12 | 12 MHz | CISC | 1 cœur | 16 bits | 24 Mo/s |
+| 2000 | Intel P4 | 1,4 GHz | CISC | 1 cœur | 32 bits | 5,2 Go/s |
+| 2011 | Core Duo Extreme | 3,2 GHz | CISC | Dual core + HT | 64 bits | 112 Go/s |
+| 2021 | Core i7 | 3,8 GHz | CISC | 8 cœurs + HT | 64 bits | 243 Go/s |
+| Top 2026 | Intel serveur quadriprocesseur | 3,2 GHz | CISC | 288 cœurs, pas HT | 64 bits | 28 To/s |
