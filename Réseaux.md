@@ -47,6 +47,25 @@ Windows serveur est un OS qui fournis des services, comme un AD, DNS, DHCP etc.
 
 1. **RIS 2000-2003:** Ancètre du WDS il permet de copier un secteur d'un disque dur, mais trop rigide car il faut exactement les même machine pour pouvoir déployer un ISO depuis le serveur
 
-2. **WDS duo et MDT 2003-2023:**
-   - **WDS** 
-   - **MDT**
+2. **WDS duo et MDT 2005-2023:**
+   - **WDS** servait de "tuyau" (transort réseau)
+   - **MDT**servait de "cerveau" (automatisation, pilotes,logiciels)
+
+3. La Transition Actuelle: La fin de MDT
+
+-> Microsoft a officellement arrêté le développement de MDT. Il n'est plus supporté pour Windows 11
+
+-> MDT ne gère pas nativement mes bios UEFI modernes, le Secure Boot et le architecutures Cloud
+
+### Pourquoi le WDS et 2026 alors ?
+
+Même si MDT s'efface, le WDS reste essentiel pour deux raisons:
+
+- **L'infrastructure mocale:** Dans les environnements isolé d'Internet ( usines, banques, défense), le Cloud n'est pas une option. Le WDS reste le seul moyen de déloyer.
+
+- **Le dépannage:** Savoir amorcer une machine via le réseu reste une compétence de base pour n'importe quel administrateur système.
+
+**C'est une technologie qui a posé les bases de l'automatisation
+
+## PXE
+
