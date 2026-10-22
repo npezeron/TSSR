@@ -135,5 +135,17 @@ Le serveur DHCP écoutesur le port 67 et le client reçoit les répo,se sur le p
 - **DHCP:** Pour l'attribution d'une adresse IP aux clients PXE
 - **Stockage:** Une partion dédiée (NTFS) pour stocker les images (souvent volumineuses)
 
-![Prérequis d'un serveur WDS](./images/prerequis-wds.png)
+- Fichiers à avoir (dossier \sources):
+  - Boot.wim: Image de démarrage
+  - Install.wim: Image d'installation
 
+## Principe du déploiment
+
+### Flux
+
+1. Boot: Le PC client démarre en mode PXE (F12 ou meni BIOS/UEFI).
+2. IP: Récupération de l'adresse IP via DHCP.
+3. WinPE: Chargment de l'image de démarrage (boot.wim) via TFTP.
+4. Choix: L'utilisateur s'authentifie et choisit l'image d'installation souhaitée.
+5. Partitionnement: Formatage du disque local via l'assistant.
+6. Copie: Transfert de l'image install.wim vers le client.
