@@ -103,3 +103,37 @@ Une fois l'adresse du serveur WDS connue, le client utilise le protocole TFTP (T
 ### Phase 3: Exécution du NBP
 
 Le programme de démarrage (wdsndb.com pour le BIOS ou wdsmgf.efi pour l'UEFI) s'exécute en RAM. L'utilisateur voi alors le message comme: "Press F12 for network boot".
+
+### Phase 4: Le changement de l'image de Démarrage (WinPE)
+
+Le NBP télécharge ensuite l'image de démarrage complète (boot.wim) toujours via TFTP.
+Le PC "boot" réellement sur ce mini-système de Windows en mémoire vive. L'installation peut alors commencer.
+
+## Attention aux concepts
+
+### Les port (67 et 68)
+
+Portes d'entrée logicielles, ils servent à achemeniner le trafic
+Le serveur DHCP écoutesur le port 67 et le client reçoit les répo,se sur le port UDP 68. C'est le canal de communonication.
+
+### Les Options (66 et 67)
+
+- Champ de données à l'intérieur du paquet DHCP
+
+- Une fois que la connexion est établie via les ports, le serveur utilise ces options pour transmettre des paramètres de configuartion client.  
+
+- Numérotation dans les standards de l'IETF (les nomes d'internet).
+
+- L'option 66 sert à donner le noms du serveur au démarrage, et l'option 67 le chemin vers le fichier de boot (comme bootmgfw.efi).
+
+## Prérique infrastructure
+
+### Besion du WDS
+
+- **ADDS:** Pour l'approbation des machines et la gestion de compte
+- **DNS:** Pour la résolution de nom de serveur de déploiement
+- **DHCP:** Pour l'attribution d'une adresse IP aux clients PXE
+- **Stockage:** Une partion dédiée (NTFS) pour stocker les images (souvent volumineuses)
+
+![Schéma présentant les prérequis d’un serveur WDS dans un environnement réseau : Active Directory Domain Services gère les machines et les comptes, DNS résout les noms, DHCP attribue les adresses IP aux clients PXE et un volume NTFS dédié stocke les images de déploiement.](C:\Users\natha\Pictures\image\Capture d'écran 2026-10-22 192004.png)
+
