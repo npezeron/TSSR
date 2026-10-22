@@ -1,0 +1,38 @@
+# Qu'est ce que le réseaux informatique
+
+Un réseau informatique est un ensemble d’équipements (ordinateurs, serveurs, imprimantes, smartphones, objets connectés...) reliés entre eux, par des liaisons filaires ou sans fil, afin de communiquer et partager des ressources : données, fichiers, applications, accès à Internet, périphériques.
+
+## Modéle OSI
+
+### Définition du modèle OSI
+
+Le modèle OSI est un modèle théorique normalisé par l’ISO qui décrit comment les données circulent entre deux systèmes sur un réseau. Il découpe la communication en 7 couches empilées.
+
+1. Physique : Bits (Câble)
+2. Liason de donnée: Trame (Switch )
+3. Réseaux: Paquet (Router)
+4. Transport: Segment (TCP ou UDP)
+5. Session: 
+6. Présentation 
+7. Application
+
+ Les 3 dernières couche c'est là ou les données passe
+
+## Modéle TCP/IP
+
+### Définition du modèle TCP/IP
+
+Le modèle TCP/IP (Transmission Control Protocol / Internet Protocol) est le modèle d’architecture réseau réellement utilisé sur Internet. Contrairement au modèle OSI, qui est surtout théorique, TCP/IP est issu d’une approche pratique : il s’est construit à partir des protocoles développés pour ARPANET dans les années 1970, puis s’est imposé comme standard de fait.
+
+1. Accès au réseaux: Couche OSI 1,2  
+2. Internet: Couche OSI 3
+3. Transport: Couche OSI 4
+4. Application: Couche OSI 5,6,7
+
+ ### Norme IEEE
+
+- 802.3 (Ethernet) c'est la norme des câbles RJ45
+  - LAN MAN WAN ce sont les différent type de réseaux 
+
+- 802.11 (Wifi) c'est la norme WIFI
+  - SOHO small Office Home Office
