@@ -36,3 +36,17 @@ Le modèle TCP/IP (Transmission Control Protocol / Internet Protocol) est le mod
 
 - 802.11 (Wifi) c'est la norme WIFI
   - SOHO small Office Home Office
+
+# Windows serveur
+
+## Définition 
+
+Windows serveur est un OS qui fournis des services, comme un AD, DNS, DHCP etc.
+
+### Un peu d'hitsoire
+
+1. **RIS 2000-2003:** Ancètre du WDS il permet de copier un secteur d'un disque dur, mais trop rigide car il faut exactement les même machine pour pouvoir déployer un ISO depuis le serveur
+
+2. **WDS duo et MDT 2003-2023:**
+   - **WDS** 
+   - **MDT**
