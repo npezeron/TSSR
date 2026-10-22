@@ -135,5 +135,5 @@ Le serveur DHCP écoutesur le port 67 et le client reçoit les répo,se sur le p
 - **DHCP:** Pour l'attribution d'une adresse IP aux clients PXE
 - **Stockage:** Une partion dédiée (NTFS) pour stocker les images (souvent volumineuses)
 
-![Schéma présentant les prérequis d’un serveur WDS dans un environnement réseau : Active Directory Domain Services gère les machines et les comptes, DNS résout les noms, DHCP attribue les adresses IP aux clients PXE et un volume NTFS dédié stocke les images de déploiement.](C:\Users\natha\Pictures\image\Capture d'écran 2026-10-22 192004.png)
+![Prérequis d'un serveur WDS](./images/prerequis-wds.png)
 
