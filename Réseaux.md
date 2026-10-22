@@ -67,5 +67,39 @@ Même si MDT s'efface, le WDS reste essentiel pour deux raisons:
 
 **C'est une technologie qui a posé les bases de l'automatisation
 
-## PXE
+## PXE: Preboot eXecution Environment
 
+### Définition
+
+Standard permettant à une station de démarrer depuis le réseau avant même d'avoir un OS sur son disque
+
+### Fonctionnement général
+
+1. Le client envoue une requête DHCP "Discovery".
+
+2. Le serveur DHCP répond avec une IP et les "Option PXE" (Option 66 et 67).
+
+3. Le client contacte le serveur WDS pour télécharger le programme d'amorce.
+
+## PXE en détail
+
+### Phase 1: Découverte (DHCP -> D.O.R.A)
+
+Le Client envoie un paquet DHCP Discover avec une option spécifique (Option 93) qui indique qu'il est un client PXE et précise son architecture (BIOS x86, UEFI x64, ou ARM64).  
+
+Le Serveur DHCP répond avec une adresse IP avec les Option 66 (Nom d'hôte du serveur de démarrage) et 67 (Nom du fichier de démarrage, ex: bootmgfw.efi)
+
+**D.O.R.A** 
+
+1. Discover
+2. Offer
+3. Request
+4. Acknowlegde
+
+### Phase 2: Transfert TFTP
+
+Une fois l'adresse du serveur WDS connue, le client utilise le protocole TFTP (Trivial File Transfer Protocol) sur le port 69. Protocole simple et léger, capable de fonctionner alors que le PC n'a encore aucun pilote complexe chargé en mémoire, le client télécharge le NBP (Network Boot Program).
+
+### Phase 3: Exécution du NBP
+
+Le programme de démarrage (wdsndb.com pour le BIOS ou wdsmgf.efi pour l'UEFI) s'exécute en RAM. L'utilisateur voi alors le message comme: "Press F12 for network boot".
