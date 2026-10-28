@@ -1,0 +1,56 @@
+1. Problème rencontré
+Les cartes réseau virtuelles VMware, notamment VMnet1 (Host-Only) et VMnet8 (NAT), ne s’installent pas correctement ou apparaissent avec un état d’erreur dans Windows.
+
+L’objectif est de rétablir leur fonctionnement sans supprimer la configuration NAT utilisée pour le projet de démarrage PXE Debian.
+2. Codes d’erreur rencontrés
+Code ou message	Signification	Conséquence constatée
+0x8007007E	Le module spécifié est introuvable.	L’installation et la désinstallation du composant VMware Bridge échouent.
+1072	Le service a été marqué pour suppression.	Une ancienne tentative d’installation du périphérique VMware a échoué.
+1060	Le service demandé n’existe pas en tant que service installé.	La commande sc.exe qc VMnetBridge confirme que le service Bridge est absent.
+Code PnP 56	Windows indique que la configuration de la classe du périphérique n’est pas terminée.	Le périphérique ROOT\VMWARE\0000 est en erreur.
+
+Autres messages observés
+- Unable to find any matching devices : Windows importe le pilote, mais ne trouve aucun périphérique correspondant à installer.
+- Status: Error : une carte virtuelle VMware a été détectée, mais elle ne fonctionne pas correctement.
+- Status: Not Present : une carte virtuelle est répertoriée, mais elle n’est pas opérationnelle.
+- VMnetAdapter — Stopped : le pilote système correspondant est arrêté.
+3. Pourquoi les cartes réseau virtuelles ne s’installent-elles pas ?
+Cause directement établie : échec de configuration du composant réseau
+Le journal C:\Windows\INF\setupapi.dev.log montre que Windows importe correctement le fichier netbridge.inf et valide sa signature. Cependant, l’application du composant au graphe réseau échoue avec le code 0x8007007E.
+
+Cela signifie que le paquet du pilote est présent, mais que Windows n’arrive pas à terminer son installation.
+Pistes à examiner
+1. Module ou dépendance manquante
+
+L’erreur 0x8007007E indique qu’un module requis est introuvable. Nous n’avons pas encore identifié précisément lequel.
+
+
+
+2. Différence de versions
+
+L’exécutable VMware Workstation est en version 26.0.1 build-25688693, alors que les paquets réseau enregistrés sont en version 26.5.0.1. Cette incohérence potentielle mérite une vérification, mais son rôle dans la panne n’est pas encore démontré.
+
+
+
+3. Enregistrement incomplet du service Bridge
+
+Le service VMnetBridge n’est pas enregistré dans Windows. Le composant vmware_bridge ne peut donc pas être considéré comme correctement installé.
+
+
+
+4. Vérifications et tentatives déjà effectuées
+- Réparation et réinstallation de VMware Workstation.
+- Vérification des fichiers réseau VMware dans le dossier d’installation.
+- Vérification de la signature de l’installateur et de vmnetbridge.dll : signatures valides.
+- Ajout des pilotes netadapter.inf et netbridge.inf au magasin de pilotes Windows.
+- Tentatives d’installation et de désinstallation du composant vmware_bridge avec netcfg.
+- Vérification des services système et du journal SetupAPI.
+Ces tentatives n’ont pas rétabli le fonctionnement des cartes réseau virtuelles.
+5. Conclusion et prochaine étape
+Le diagnostic montre que le problème se situe au niveau de l’installation ou de l’enregistrement des composants réseau VMware dans Windows, et non simplement dans le choix du mode NAT.
+
+La cause exacte de l’erreur 0x8007007E reste à identifier. Les priorités sont :
+1. Identifier le module manquant ou la dépendance qui empêche l’installation du composant Bridge.
+2. Vérifier la cohérence des versions des composants VMware.
+3. Rétablir les cartes virtuelles VMnet1 et VMnet8 sans réinitialiser le réseau Windows.
+Important : il faut conserver la configuration NAT existante : réseau 192.168.162.0/24, passerelle VMware 192.168.162.2, adresse de l’hôte 192.168.162.1 et serveur DHCP Windows Server 192.168.162.254. Il faut également éviter netcfg -d, qui réinitialiserait largement la configuration réseau Windows.
