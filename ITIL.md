@@ -22,8 +22,11 @@
 ## Verions antérieures et actuelle
 
 - Version ITILv1 (42 livres) en 1989
+
 - Version ITILv2 (8 livres) en 1999
+
 - Version ITILv3 (5 livres) en 2007 et 2011
+
 - Version ITILv4 (4 livre) en 2019
 
 ## Les 5 etapes du cycle de vie d'un service
