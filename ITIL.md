@@ -146,6 +146,28 @@ Ensemble des rôles, de fonctions et de processus mises en oeuvre pour fournir d
 
   - Offre des fonctionnalités avancées pour la découverte automatique des actifs, la gestion des mises à jour logicielles, la surveillance des matéreils, etc.
 
-## Clycle de vie GLPI
+## Clycle de vie d'un ticket GLPI
 
 Enregistrement -> Classification -> Traitement -> Solution -> Validation -> Clôture
+
+## Cycle de vie d'un service
+
+1. Stratégie des services
+
+  - Définit la perspective, la position, les plan et  les modèle qu'un foucnisseur de srevices doit exécuter pour atteindre les résultas commerciaux d'une oirganisation.
+
+2. Conception des services
+
+  - Comprend la conception des services, les partiques de gourvernance ainsi que les processus et les politiqueq nécessaires pour réaliser la stratégi du fournisseur de service et pour faciliter l'introduction des services dans des environnements pris en charge.
+
+3. Transistion des services
+
+ - garantie que les services nouveaux, modifiés ou désactivés répond aux attentes de l'organisation telles que documentées dans les étapes de la stratégie des services et de la conception des services
+
+4. Exploitation des services
+
+ - Coordonne et réalise les activités et les processus nécessaires pour fournir les services aux utilisateurs et clients à des niveaux de service convenus et pour les gérer. L'exploitation des services gère également la technologie qui est utilisée pour fournir et soutenir les services.
+
+5. Amélioration continue des services (CSO, Continual service improvement)
+
+  - Garant
