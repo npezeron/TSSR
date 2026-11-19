@@ -6,6 +6,12 @@
 
 **ITSM:** Information Technologie Service Management
 
+**SLA:** Service Level Agreement  
+
+- **GTI:** Garentie de temps incident
+- **GTR:** Garentie de temps résolution
+
+
 ## Histoire et création
 
 - Conçu dans les années 1980 (1986) en Grande Bretagne sous Margaret TATCHER,suite à la crise économique et financierère.
@@ -43,18 +49,36 @@
 Ensemble des rôles, de fonctions et de processus mises en oeuvre pour fournir de la valeur aux clients sous formes de services.
 
 1. Valeur et Co-création
+
 2. Gestion des relation de service
+
 3. Valeur: Résulat, Cout, Risque
 
 ## 7 Princies directeurs
 
 1. Privilégier la valeur
+
 2. Commencer là on est
+
 3. Avancer par itération avec les retours
+
 4. Collaborer et promouvoir la visibilité
+
 5. Penser et travailler de façon holistique
-6. Opter pour la simpkicité et praticité
+
+6. Opter pour la simplicité et praticité
+
 7. Optimiser et Automatiser
+
+## 4 Piliers pour chaque service
+
+1. Organisations et personnes: Culture de l'entreprise, compétence et rôle.
+
+2. Information et technologie: Outils de gestion, bases de données et connaissances.
+
+3. Pertenaires et fournisseurs: Relations avec les prestataires externes.
+
+4. Flux de valeur et precessus: Comment les activités s'enchaînent pour créer de la valeur.
 
 --------------------------------------------
 
@@ -123,4 +147,3 @@ Ensemble des rôles, de fonctions et de processus mises en oeuvre pour fournir d
 ## Clycle de vie GLPI
 
 Enregistrement -> Classification -> Traitement -> Solution -> Validation -> Clôture
-
