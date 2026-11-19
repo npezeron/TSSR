@@ -11,7 +11,6 @@
 - **GTI:** Garentie de temps incident
 - **GTR:** Garentie de temps résolution
 
-
 ## Histoire et création
 
 - Conçu dans les années 1980 (1986) en Grande Bretagne sous Margaret TATCHER,suite à la crise économique et financierère.
