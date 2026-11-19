@@ -2,7 +2,9 @@
 
 ## Définition
 
-ITIL (Information Technology Infrastructure Library) est le cadre mondial de référence pour la gestion des services informatiques (ITSM), constitué d’un ensemble de bonnes pratiques visant à aligner les services IT sur les objectifs métier et à optimiser la création de valeur pour le client.
+**ITIL** (Information Technology Infrastructure Library) est le cadre mondial de référence pour la gestion des services informatiques (ITSM), constitué d’un ensemble de bonnes pratiques visant à aligner les services IT sur les objectifs métier et à optimiser la création de valeur pour le client.
+
+**ITSM:** Information Technologie Service Management
 
 ## Histoire et création
 
@@ -85,13 +87,40 @@ Ensemble des rôles, de fonctions et de processus mises en oeuvre pour fournir d
 - **Reporting et Statistiques**
 
   - Propose des fonctionnalités de reporting et de génération de statistiques pour analuser les données relatives aux actifs, aux ticket et contrats etc.
-  - Permet de suivre les performances, d'indentifier les tendances, d'évaluer l'utilsation des ressources et de prendre des décissions basées sur des données.
+
+  - Permet de suivre les performances, d'indentifier les tendances, d'évaluer l'utilisation des ressources et de prendre des décissions basées sur des données.
+
+## Création de GLPI
+
+- GLPI naît sour l'égide de l'association INDNET. Le but initial était de proposer une solution libre de gestion de parc et de service desk ITIL
+
+- **Juillet 2015** : INDEPNET confier la maintenance de GLPI à Techlib', qui devient l'éditeur officiel. A l'époque, Teclib' annonce que le code reste libre sous licence GLPI.
+
+## Profis dans GLPi
+
+- Super-Admin -> Contrôle total
+
+- Admin -> Administration
+
+- Supervisor -> Supervision
+
+- Technician -> Traitement des tickets
+
+- Hotliner -> Prise en charge des appels
+
+- Observer -> Suivi en lecture
+
+- Read-only -> Lecture seule
+
+- Self-service (simplified) -> Utilisateur final
 
 ## Addons de GLPI
 
 - Agent GLPI
+
   - Offre des fonctionnalités avancées pour la découverte automatique des actifs, la gestion des mises à jour logicielles, la surveillance des matéreils, etc.
 
 ## Clycle de vie GLPI
 
 Enregistrement -> Classification -> Traitement -> Solution -> Validation -> Clôture
+

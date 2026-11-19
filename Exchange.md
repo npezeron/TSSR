@@ -10,14 +10,14 @@
 
 # Les protocle
 
-1. SMTP: Simple Message Transfer Protocole port.
+- SMTP: Simple Message Transfer Protocole port.
   - port 25 (ce port n'est pas sécurisé)
   - port 587 (port sécurisé)
 
-2. IMAP: permet de consulter les mails
+- IMAP: permet de consulter les mails
   - Port 143 (non sécurisé)
   - Port 993 (sécurisé)
 
-3. POP3: permet de télécharge les mails port 110 
+- POP3: permet de télécharge les mails port 110 
   - Port 110 (non sécurisé)
   - Port 995 (sécurisé)
