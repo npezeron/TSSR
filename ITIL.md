@@ -171,3 +171,37 @@ Enregistrement -> Classification -> Traitement -> Solution -> Validation -> Clô
 5. Amélioration continue des services (CSO, Continual service improvement)
 
   - Garant
+
+
+## Collecteur GLPI
+
+### GLPI : différence entre SSL et TLS pour les collecteurs
+
+Dans GLPI (**Configuration > Collecteurs**), les options « SSL » et « TLS » ne désignent pas deux protocoles de chiffrement différents, mais **deux façons d'établir la connexion chiffrée** au serveur de messagerie. Elles correspondent aux flags `/ssl` et `/tls` de la fonction `imap_open` de PHP.
+
+## Comparatif
+
+| | **SSL** | **TLS** |
+|---|---|---|
+| Mécanisme | Chiffrement **implicite** : la connexion est chiffrée dès le début | **STARTTLS** : connexion en clair, puis passage au chiffré par une commande |
+| Ports usuels | IMAP **993** / POP3 **995** | IMAP **143** / POP3 **110** |
+| Quand l'utiliser | Si le serveur propose un port « IMAPS / POP3S » | Si le serveur utilise le port standard avec STARTTLS |
+
+## Points à retenir
+
+- Le terme « SSL » est un héritage : en pratique, la négociation utilise TLS 1.2 ou 1.3, car les vrais SSL 2/3 sont obsolètes et désactivés. Ici, « SSL » veut simplement dire « TLS implicite ».
+- Choisissez l'option qui correspond au **port** indiqué dans le champ serveur (par exemple `mail.exemple.fr:993`). Un mauvais couple port/mode provoque une erreur de connexion ou un timeout.
+
+## Validation du certificat
+
+- **NO-VALIDATE-CERT** : accepte n'importe quel certificat, y compris auto-signé ou expiré. À réserver aux tests ou aux serveurs internes.
+- **VALIDATE-CERT** : vérifie la chaîne de confiance, donc le certificat doit être valide et la CA reconnue par le serveur GLPI. C'est le choix recommandé en production.
+
+## Cas courants
+
+- **Microsoft 365 / Gmail** : IMAP, port 993, SSL, VALIDATE-CERT (avec OAuth2 ou mot de passe d'application selon la configuration).
+- **Serveur interne sur le port 143** : TLS (STARTTLS).
+
+## Dépannage
+
+Si le test de connexion échoue, vérifiez d'abord le couple port/mode, puis le certificat (souvent la cause en cas de certificat auto-signé).
